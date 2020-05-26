@@ -16,12 +16,61 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo.png" height=30 width=41></a>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"
+                         aria-hidden="true"></span> Home</a></li>
+                    <li><a href="aboutus.html"><span class="glyphicon glyphicon-info-sign"
+                         aria-hidden="true"></span> About</a></li>
+                    <li class="dropdown">
+                        <a href="contactus.html" class="dropdown-toggle" data-toggle="dropdown"
+                         role="button" aria-haspopup="true" aria-expanded="false">
+                         <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                         Menu <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Appetizers</a></li>
+                            <li><a href="#">Main Courses</a></li>
+                            <li><a href="#">Desserts</a></li>
+                            <li><a href="#">Drinks</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Specials</li>
+                            <li><a href="#">Lunch Buffet</a></li>
+                            <li><a href="#">Weekend Brunch</a></li>
+                        </ul>
+                     </li>
+                    <li><a href="contactus.html">
+                        <i class="fa fa-envelope-o"></i>
+                        Contact
+                    </a></li>
+                </ul>
+                
+            </div>
+            
+        </div>
+        <span class="navbar-text">
+            <a id="login-link">
+            <span class="glyphicon glyphicon-log-in"></span>Login</a>
+        </span>
+    </nav>
+    
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Login </h4>
+                <h4 class="modal-title">Login</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 
             </div>
@@ -116,53 +165,7 @@
         </div>
     </div>
     
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img src="img/logo.png" height=30 width=41></a>
-            </div>
-
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"
-                         aria-hidden="true"></span> Home</a></li>
-                    <li><a href="aboutus.html"><span class="glyphicon glyphicon-info-sign"
-                         aria-hidden="true"></span> About</a></li>
-                    <li class="dropdown">
-                        <a href="contactus.html" class="dropdown-toggle" data-toggle="dropdown"
-                         role="button" aria-haspopup="true" aria-expanded="false">
-                         <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
-                         Menu <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Appetizers</a></li>
-                            <li><a href="#">Main Courses</a></li>
-                            <li><a href="#">Desserts</a></li>
-                            <li><a href="#">Drinks</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Specials</li>
-                            <li><a href="#">Lunch Buffet</a></li>
-                            <li><a href="#">Weekend Brunch</a></li>
-                        </ul>
-                     </li>
-                    <li><a href="contactus.html">
-                        <i class="fa fa-envelope-o"></i>
-                        Contact
-                    </a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a id="login-link">
-                    <span class="glyphicon glyphicon-log-in"></span> Login</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    
 
     
 
@@ -187,6 +190,61 @@
     
 
     <div class ="container">
+        <div class="row row-content">
+			<div class="col">
+				<div id="mycarousel" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="carousel-item active">
+							<img class="d-block img-fluid" src="img/uthappizza.png" alt="Uthappizza">
+							<div class="carousel-caption d-none d-md-block">
+								<h2>Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$4.99</span></h2>
+								<p class="hidden-xs-down">
+									A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block img-fluid" src="img/buffet.png" alt="Buffet">
+							<div class="carousel-caption d-none d-md-block">
+								<h2>Weekend Grand Buffet <span class="badge badge-danger">HOT</span></h2>
+								<p class="hidden-xs-down">
+									Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person.
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block img-fluid" src="img/alberto.png" alt="alberto">
+							<div class="carousel-caption d-none d-md-block">
+								<h2>Alberto Somayya</h2>
+                                <h4>Executive Chef</h4>
+								<p class="hidden-xs-down">
+									Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
+								</p>
+							</div>
+						</div>
+						
+					</div>
+					<ol class="carousel-indicators">
+						<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#mycarousel" data-slide-to="1"></li>
+						<li data-target="#mycarousel" data-slide-to="2"></li>
+					</ol>
+					<a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+					<div class="btn-group" id="carouselButtons">
+						<button class="btn btn-danger btn-sm" id="carousel-button">
+							<span id="carousel-button-icon" class="fa fa-pause"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+       
+		
         <div class ="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
